@@ -12,6 +12,18 @@
         html {
             scroll-behavior: smooth;
         }
+
+        #skil::before,
+        #porto::before {
+            display: block;
+            content: " ";
+            margin-top: -65px;
+            height: 65px;
+            visibility: hidden;
+        }
+            .w-header {
+              width: 7.2rem;
+            }
     </style>
     <title>Muhammad Zaky Asyhari</title>
 </head>
@@ -24,7 +36,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto smooth-scroll list-unstyled">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -93,37 +105,46 @@
         </div>
     </div>
 <!---porto---->
-<section class="bg-light">
-    <div id="porto" class="container">
-        <div class="row pt-3 mb-3">
-            <div class="col text-center">
-                <h1>Portofolio</h1>
-            </div>
-        </div>
-        <div class="row pt-2 pb-3">
-            <div class="col pt-2">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/home.png" alt="Card image cap">
+    <div id="porto" class="container my-5">
+        <section class="">
+          <h3 class="font-weight-bold text-center dark-grey-text pb-2">Portofolio</h3>
+          <hr class="w-header my-4">
+          <div class="tab-content">
+              <div class="row">
+                <div class="col-md-12 col-lg-4">
+                  <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+                    <img class="card-img-top" src="img/php.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="my-3">Web Pariwisata karawang</h5>
+                      <p class="card-text  text-uppercase mb-3"><small>pariwisata kota karawang menggunakan geolocation dan php native</small> </p>
+                      <button onclick="window.open('https://skripsimalla.000webhostapp.com','_blank')" class="btn btn-sm btn-primary">Lihat</button>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+                    <img class="card-img-top" src="img/andro1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="my-3">Pemetaan Diler Honda</h5>
+                      <p class="card-text text-uppercase mb-3"><small>Pemetaan diler honda di yogyakarta menggunakan metode heuristik</small></p>
+                      <button onclick="window.open('https://github.com/ZakyAsyhari/GIS','_blank')" class="btn btn-sm btn-primary">Lihat</button>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+                        <img class="card-img-top" src="img/codeigniter.png" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Wen Pariwisata karawang</h5>
-                            <p class="card-text">Membuat website daftar lokasi pariwisata di kota karawang dengan Php Native</p>
-                            <a href="https://skripsimalla.000webhostapp.com/" target="_blank" class="btn btn-primary">Lihat</a>
+                            <h5 class="my-3">Toko Online</h5>
+                            <p class="card-text text-uppercase mb-3"><small> online sederhana menggunakan framework Codeigniter</small></p>
+                            <button onclick="window.open('https://github.com/ZakyAsyhari/CI.git','_blank')" class="btn btn-sm btn-primary">Lihat</button>
                         </div>
+                    </a>
                 </div>
             </div>
-            <div class="col pt-2">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top fix img-fluid" src="img/andro1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Aplikasi Pemetaan diler</h5>
-                            <p class="card-text">Aplikasi android dengan Rest full api dari CI dan menggunakan metode heuristic</p>
-                            <a href="https://github.com/ZakyAsyhari/GIS" target="_blank" class="btn btn-primary">Lihat</a>
-                        </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
-</section>
+      
 <!-- footerrr  -->
     <footer class="bg-dark lg-dark text-white">
         <div class="container pt-4 pb-3">
