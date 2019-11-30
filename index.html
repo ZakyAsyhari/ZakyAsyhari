@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./style.css">
     <style>
         html {
             scroll-behavior: smooth;
@@ -21,9 +22,12 @@
             height: 65px;
             visibility: hidden;
         }
-            .w-header {
-              width: 7.2rem;
-            }
+        .w-header {
+            width: 7.2rem;
+        }
+        .pos{
+            position: absolute;
+        }
     </style>
     <title>Muhammad Zaky Asyhari</title>
 </head>
@@ -44,18 +48,19 @@
                         <a class="nav-link" href="#porto">Portofolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skil">Kemampuan</a>
+                        <a class="nav-link" href="#skil">Skill</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 <!---foto---->
-    <div id="" class="jumbotron jumbotron-fluid mt-5" >
-        <div class="container text-center">
+<div id="particles-js" class="trans" style="height:100vh; width:100%; position:absolute; z-index:0;"></div>
+    <div id="" class="jumbotron jumbotron-fluid mt-5" style="height:100vh; width:100%;">
+        <div class="container text-center ">
             <img src="img/profil.jpg" alt="" class="rounded-box mt-5 animated zoomIn" width="200">
                 <h1 class="display-4 animated bounceInDown delay-1s">Muhammad Zaky Asyhari</h1>
-                <p class="lead  animated bounceInUp delay-2s">Web Developer | Android Developer</p>
+                <p class="lead  animated bounceInUp delay-2s" style="color: white;">Web Developer | Android Developer</p>
         </div>
     </div>
 <!---sk---->
@@ -164,5 +169,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- <script src="https://threejs.org/examples/js/libs/stats.min.js"></script> -->
+    <script src="./script.js"></script>
 </body>
 </html>

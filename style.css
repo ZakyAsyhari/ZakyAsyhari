@@ -1,0 +1,19 @@
+
+h1 {
+  color:black;
+  display:absolute;
+}
+ p {color:dimgray;}
+
+#particles-js {
+  position: relative;
+  width: auto;
+  height: auto;
+  background-color: "";
+  background-image:url("https://wallpaperbro.com/img/54866.png");
+  background-position: 50% 50%;
+}
+
+.trans{
+ background-color:teal;
+}
